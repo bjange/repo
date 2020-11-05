@@ -6,8 +6,8 @@ set -e
 # 生成静态文件
 npm run build
 
-# 进入生成的文件夹
-cd repo/docs/.vuepress/dist
+# 进入生成的文件夹/home/runner/work/repo/repo
+cd /home/runner/work/repo/repo/docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 #echo 'xugaoyi.com' > CNAME
