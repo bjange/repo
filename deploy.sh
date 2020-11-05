@@ -7,12 +7,20 @@ set -e
 npm run build
 
 SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
-echo $SHELL_FOLDER
+echo '当前路径1：'+ $SHELL_FOLDER
 # 进入生成的文件夹/home/runner/work/repo/repo/docs/.vuepress/dist/
 cd docs/.vuepress/dist
 
 SHELL_FOLDER2=$(cd "$(dirname "$0")";pwd)
-echo $SHELL_FOLDER2
+echo '当前路径1：'+$SHELL_FOLDER2
+
+
+for file_a in ${SHELL_FOLDER2}/*
+do  
+    temp_file=`basename $file_a`  
+    echo 'dist目录:' + $temp_file  
+done
+
 
 # 如果是发布到自定义域名
 #echo 'xugaoyi.com' > CNAME
@@ -50,6 +58,10 @@ git push -f $githubUrl main:gh-pages # 推送到github
 # git add -A
 # git commit -m "${msg}"
 # git push -f $codingUrl master # 推送到coding
-
+for file_a in ${SHELL_FOLDER2}/*
+do  
+    temp_file=`basename $file_a`  
+    echo 'dist目录222:' + $temp_file  
+done
 cd - # 退回开始所在目录
 rm -rf docs/.vuepress/dist
