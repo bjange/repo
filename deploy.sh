@@ -44,9 +44,12 @@ else
   git config --global user.email "daixueen@hotmail.com"
 fi
 git init
+git branch
+git branch -M main
+git checkout -b gh-pages
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl main:gh-pages # 推送到github
+git push -f $githubUrl gh-pages:gh-pages # 推送到github
 
 # deploy to coding
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
