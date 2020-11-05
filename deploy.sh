@@ -7,7 +7,7 @@ set -e
 npm run build
 
 # 进入生成的文件夹
-cd docs/.vuepress/dist
+cd repo/docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 #echo 'xugaoyi.com' > CNAME
@@ -33,7 +33,7 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl gh-pages # 推送到githubmain:
+git push -f $githubUrl main:gh-pages # 推送到github
 
 # deploy to coding
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
