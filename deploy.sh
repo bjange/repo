@@ -33,7 +33,7 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl main:gh-pages # 推送到github
+git push -f $githubUrl gh-pages # 推送到githubmain:
 
 # deploy to coding
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
@@ -47,4 +47,4 @@ git push -f $githubUrl main:gh-pages # 推送到github
 # git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录
-# rm -rf docs/.vuepress/dist
+rm -rf docs/.vuepress/dist
