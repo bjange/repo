@@ -18,6 +18,8 @@ cd docs/.vuepress/dist
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
   # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
   # git push -f git@github.com:bjange/repo.git master:gh-pages
+  #创建gh-pages分支,s 通过github page/你项目的名称就可以访问到那个分支的静态文件
+
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
@@ -45,4 +47,4 @@ git push -f $githubUrl main:gh-pages # 推送到github
 # git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录
-rm -rf docs/.vuepress/dist
+# rm -rf docs/.vuepress/dist
