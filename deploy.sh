@@ -6,8 +6,13 @@ set -e
 # 生成静态文件
 npm run build
 
-# 进入生成的文件夹/home/runner/work/repo/repo
-cd /home/runner/work/repo/repo/docs/.vuepress/dist
+SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
+echo $SHELL_FOLDER
+# 进入生成的文件夹/home/runner/work/repo/repo/docs/.vuepress/dist/
+cd docs/.vuepress/dist
+
+SHELL_FOLDER2=$(cd "$(dirname "$0")";pwd)
+echo $SHELL_FOLDER2
 
 # 如果是发布到自定义域名
 #echo 'xugaoyi.com' > CNAME
