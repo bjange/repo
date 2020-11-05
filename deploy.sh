@@ -43,9 +43,8 @@ else
   git config --global user.name "xueen_dai"
   git config --global user.email "daixueen@hotmail.com"
 fi
+
 git init
-git branch
-git branch -M main
 git checkout -b gh-pages
 git add -A
 git commit -m "${msg}"

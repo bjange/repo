@@ -4,5 +4,5 @@
 
 </p>
 
-<h2 align="center">repoDoc by <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank">vdoing</a></h2>
+<h2 align="center">repoDoc by <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer">vdoing</a></h2>
 
