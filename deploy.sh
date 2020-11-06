@@ -4,6 +4,7 @@ set -e
 # 生成静态文件
 npm run build
 
+cd docs/.vuepress/dist
 # 自定义域名
 #echo 'xugaoyi.com' > CNAME
 
