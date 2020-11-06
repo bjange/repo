@@ -3,8 +3,8 @@ home: true
 # heroImage: /img/web.png
 heroText: 积跬步以至千里，致敬每个爱学习的你
 tagline: 不能富贵，非因宿命只缘懒；难成大器，既贪诗酒又恋花。
-# actionText: 立刻进入 →
-# actionLink: /bg/
+actionText: 立刻进入 →
+actionLink: /rd/
 
 bannerBg: none
 # bannerBg: auto 
@@ -14,17 +14,17 @@ bannerBg: none
  # 提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 
-features: # 可选的
- - title: 器
-   details: 紫薇软剑：依靠的是剑，是用剑作为"器"的性状来发挥威力。
+# features: # 可选的
+#  - title: 器
+#    details: 紫薇软剑：依靠的是剑，是用剑作为"器"的性状来发挥威力。
    # link: /web/ # 可选
    # imgUrl: /img/web.png # 可选
- - title: 术
-   details: 玄铁重剑：剑只是一个介质，本身并不锋利，大巧不工。
+#  - title: 术
+#    details: 玄铁重剑：剑只是一个介质，本身并不锋利，大巧不工。
    # link: /ui/
    # imgUrl: /img/ui.png
- - title: 道
-   details: 无剑：手中无剑，心中有剑，草木竹石皆可为剑，以无剑胜有剑。
+#  - title: 道
+#    details: 无剑：手中无剑，心中有剑，草木竹石皆可为剑，以无剑胜有剑。
    # link: /technology/
    # imgUrl: /img/other.png
 
