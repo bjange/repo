@@ -6,7 +6,7 @@ npm run build
 
 cd docs/.vuepress/dist
 # 自定义域名
-#echo 'xugaoyi.com' > CNAME
+echo 'blog.georges.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'

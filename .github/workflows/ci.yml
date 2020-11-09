@@ -5,8 +5,13 @@ on:
   push:
     branches:
       - main
+
+env:
+  TZ: Asia/Shanghai
+
 jobs:                       # 工作流
   build:                    # 自定义名称
+    name: blog build & deploy
     runs-on: ubuntu-latest            #运行在虚拟机环境ubuntu-latest
     strategy:
       matrix:
@@ -19,6 +24,12 @@ jobs:                       # 工作流
         uses: actions/setup-node@v1                                 # 作用：安装nodejs
         with:
           node-version: ${{ matrix.node-version }}                  # 版本
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
       - name: run deploy.sh                                         # 步骤3 （同时部署到github和coding）
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}                 # toKen私密变量
