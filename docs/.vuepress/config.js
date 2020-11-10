@@ -216,9 +216,7 @@ module.exports = {
       {
         transformer: (timestamp, lang) => {
           const moment = require('moment')                  // https://momentjs.com/
-          moment.locale();         // zh-cn
-          return moment(timestamp).format('lll');  // 2020年11月10日 20:37
-          // return moment(timestamp).format('YYYY/MM/DD, HH:mm');    // 2020/11/10, 08:22:12 pm
+          return moment(timestamp).format('YYYY/MM/DD, HH:mm');    // 2020/11/10, 08:22:12 pm
 
         }
       }

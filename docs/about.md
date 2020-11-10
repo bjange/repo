@@ -23,7 +23,8 @@ article: false
 - **Email**:  <a href="mailto:894072666@qq.com">894072666@qq.com</a>
 - **GitHub**: <https://github.com/xugaoyi>
 - **Vdoing主题文档：**<https://doc.xugaoyi.com/vuepress-theme-vdoing-doc/>
-- **Vdoing交流QQ群**：694387113 -->
+- **Vdoing交流QQ群**：694387113 
+  -->
 
 <!-- <script>
   export default {
